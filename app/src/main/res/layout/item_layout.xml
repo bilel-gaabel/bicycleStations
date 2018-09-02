@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/label_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+
+        android:text="@string/station_name"
+        android:textColor="@color/colorLabel"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="12sp"
+        android:textColor="@color/colorItemName"
+        app:layout_constraintStart_toEndOf="@+id/label_name" />
+
+    <TextView
+        android:id="@+id/label_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:text="@string/station_address"
+        android:textColor="@color/colorLabel"
+        app:layout_constraintTop_toBottomOf="@+id/item_name" />
+
+    <TextView
+        android:id="@+id/item_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorItemAddress"
+        app:layout_constraintStart_toEndOf="@+id/label_address"
+        app:layout_constraintTop_toBottomOf="@+id/item_name" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorItemAddress"
+        app:layout_constraintTop_toBottomOf="@+id/item_address" />
+</android.support.constraint.ConstraintLayout>

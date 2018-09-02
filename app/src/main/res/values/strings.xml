@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Stations vélos</string>
+
+    <string name="station_name">Name: </string>
+    <string name="station_address">Address: </string>
+    <string name="station_info_title">Station Information</string>
+
+    <string name="station_number">number</string>
+    <string name="station_contact_name">contract_name</string>
+    <string name="station_position">position</string>
+    <string name="station_banking">banking</string>
+    <string name="station_bonus">bonus</string>
+    <string name="station_bike_stands">bike_stands</string>
+    <string name="station_available_bike_stands">available_bike_stands</string>
+    <string name="station_available_bikes">available_bikes</string>
+    <string name="station_status">status</string>
+    <string name="station_last_update">last_update</string>
+
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+</resources>
